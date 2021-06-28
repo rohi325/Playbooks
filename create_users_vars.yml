@@ -1,0 +1,12 @@
+---
+- name: This playbook creates a user
+  hosts: webserver
+  become: true
+
+  vars:
+    user: sunny       
+
+  tasks:
+  - name: Creating a user sunny "{{user}}"
+    user: 
+      name: "{{user}}"

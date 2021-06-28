@@ -1,0 +1,16 @@
+---
+- name: This playbook deletes a file
+  hosts: all
+  become: true
+
+  tasks: 
+  - name: deleting a file
+    file: 
+      path: /home/rohit/jojifile
+      state: absent
+
+
+  - name: deleting a file
+    file:
+      path: /home/rohit/file123
+      state: absent      

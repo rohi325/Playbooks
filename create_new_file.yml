@@ -1,0 +1,10 @@
+---
+- name: This playbook creates a new file
+  hosts: all
+  become: true
+
+  tasks:
+  - name: creates a file
+    file:
+      path: /home/rohit/jojifile
+      state: touch

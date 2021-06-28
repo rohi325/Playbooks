@@ -1,0 +1,10 @@
+---
+- name: This playbook copy a file
+  hosts: all
+  become: true
+
+  tasks: 
+  - name: copy a file
+    copy: 
+      src: /home/rohit/rohitfile
+      dest: /home/rohit
